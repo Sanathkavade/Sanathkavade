@@ -1,0 +1,230 @@
+<html>
+  <meta charset='UTF-8'/>
+  <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+ 
+  <head>
+    <title>Will You Be My Gurl! 😍</title>
+  </head>
+ 
+  <style>
+    :root {
+      --warna-bg: rgba(0, 0, 0, .25);
+      --warna-teks: white;
+      --warna-bingkai: rgba(255, 255, 255, .8);
+      --bingkai: 10px;
+      --gaya-font: 'Ubuntu', sans-serif;
+      --gaya-font2: 'Dancing Script', sans-serif;
+    }
+    @keyframes fanim {0% {background-position: 0% 0%;}25% {background-position: 100% 100%;} 50% {background-position: 0% 100%;} 75% {background-position: 50% 50%;} 100% {background-position: 0% 0%;}}
+    body{background-color:#101010;font-family:var(--gaya-font);padding: 25px;-webkit-user-select: none; -ms-user-select: none; user-select: none;} a{text-decoration:none;} #linkmp3, #pesanstiker{display:none}
+    body::before{content:"\00A9  aoudumber.dev - Instagram";color:white;opacity:.3;font-size:2vw;position:fixed;bottom:25px;left:25px;z-index:2}
+    #bodyblur{opacity:2;animation: jj 7s infinite;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;} #wallpaper{transition:all 3s ease;}
+    #beneranblur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 83%);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    transition: all 3s ease;
+}
+
+    @keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
+    blockquote{opacity:0;visibility:hidden;transition:all .3s ease;position:relative;margin-top:120px;margin-left:0;margin-right:0;}
+    blockquote{width:400px;background:none;border-radius:var(--bingkai);border: 0px solid var(--warna-bingkai);color:var(--warna-teks);text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);text-align:center;line-height:1.3em;padding:25px;}
+    p{color:var(--warna-teks);font-size:16px;font-weight:400;line-height:1.4em;margin:0 30px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);transition:all 1s ease;}
+    #kalimat{text-align:center;font-size:17px;font-weight:700;}
+    #kalimatc{font-family:var(--gaya-font2);font-size:22px;font-weight:700;}
+
+    #katajawab{font-weight:400;margin:0;display:none;}
+    @keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
+    @keyframes aniopa{0% {transform: scale(1);} 50% {transform: scale(.75);} 100% {transform: scale(1);}}
+    #katabawah{transform:scale(.1);font-size:30px;font-weight:400}
+    #katatiga{font-size:18px;} #kataempat{font-size:13px;font-weight:400;text-align:right;}
+    @keyframes rtf{from {transform: rotate(0deg);} to {transform: rotate(360deg);}} @keyframes rt{from {transform: scale(.9);} to {transform: scale(1);}}
+    #bq img{display:none;padding:10px;width:130px;height:130px;margin:20px 0 0 0;}
+    #bq img:first-child{display:inline-flex}
+    #akhiran{display:none;color:#FFC700;font-size:14px;text-align:center;background:rgba(0,0,0,.55);text-shadow: 0px;padding:10px;border-radius:var(--bingkai);line-height:10px;transition:all .2s ease;} #akhiran:hover{transform: scale(.9);opacity:.5;}
+
+    #pergeseran{opacity:0;visibility:hidden;transition:all 1s ease;display:flex;flex-wrap:nowrap;align-items:flex-start;justify-content:flex-start;position:relative;max-width:500px;padding:0 20px; overflow-y:hidden;overflow-x:scroll;scroll-behavior:smooth;scroll-snap-type:x mandatory; -ms-overflow-style:none;-webkit-overflow-scrolling:touch}
+    #pergeseran p{background:#003A76;color:white;border: 1px dashed #fff;border-radius:8px;padding:8px;display:flex;flex-wrap:nowrap;text-align:center;font-size:16px;font-weight:700;align-items:center;justify-content:center;flex-shrink:0; width:90%; min-height:130px;margin:0 15px 0 0; scroll-snap-align:center} #pergeseran > *:last-child{margin-right:0} #pergeseran:after{content:'';display:block;flex-shrink:0; align-self:stretch;padding-left:20px}
+    #pergeseran p b{display:block;} #pergeseran p b img{width:80px;height:80px;margin:20px 0;}
+    /*#pergeseran p b span{display:flex;}*/
+    #tm{color:#FFB400;transition:all .5s ease;} #tm:hover{transform: scale(.7);}
+    #idgeser{position:relative;top:30vh;font-size:17px;color:white}
+
+    #Tombol{position:relative;opacity:0;margin:0;margin-top:-100px;display:flex;align-items:left;list-style:none;transform: scale(.1);transition:all 1s ease;}
+    #Tombol a{cursor:pointer;display:inline-flex;align-items:center; margin:0;margin:12px 0 12px 0;transition:all .2s ease;padding:10px;outline:0;border-left:2px solid var(--warna-bingkai);border-right:2px solid var(--warna-bingkai); border-radius:var(--bingkai);line-height:15px;background:var(--warna-bg);color:var(--warna-teks);font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;z-index:1}
+    /* #Tombol a:hover{border-left:4px solid var(--warna-bingkai);border-right:4px solid var(--warna-bingkai);transform: scale(.90);opacity:.98;} */
+    #buttonv2{position:absolute;font-size:15px;color:white;background:var(--warna-bg);padding:10px;border-radius:8px;line-height:10px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);opacity:0}
+
+    .lovein{font-size:50px;display:flex;align-items:center;justify-content:center;transition:all .3s ease;}
+    .lovein svg{width:80px;height:80px;fill:#fefefe}
+
+    .content2{display:block;text-align:center;width:100%;height:180px;margin-top:50px;}
+    .content2 > *{display:flex;align-items:center;justify-content:center;margin-top:15px;font-size:17px;color:white}
+    .image img{border-radius:10%;transform:scale(.1);transition:all .8s ease;}
+    #k2 .image > *{margin-bottom:40px;} #k2{font-weight:700;font-size:17px;color:white;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);} #final1{transition:all 3s ease;}
+
+    #idkirim{font-size:13px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);color:white;transition:all .5s ease;}
+    #idkirim{opacity:0;visibility:hidden;margin-top:100px} #idkirim:hover{transform:scale(.8);}
+
+    .content2{display:none;}
+    #Content{animation-name:none;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:0;margin-top:50px;width:100%;height:180px;transition:all 1s ease;}
+    #Content > *{display:flex;align-items:center;text-align:center;justify-content:center;margin-top:15px;}
+    #Content img{display:none;background:white;border:2px solid var(--warna-bingkai);border-radius:50%;padding:10px;width:90px;height:90px;margin:20px 0 0 0;}
+    #fotoakhir{opacity:.1;transition:all 1.5s ease;transform: scale(.1);}
+
+    #fotolove img{transition:all .5s ease;width:75px;height:75px;padding:0;background:none}
+    #suratin img{display:inline-flex;background:rgba(255,255,255, 1);border-radius:10%;padding:10px;width:140px;height:110px;transition:all .3s ease;}
+    #suratin img:hover{transform:scale(.9);}
+
+    .swal2-modal > *{font-size:17px;}
+    .swal2-title{line-height:1.3em;margin-right:10px;margin-left:10px;font-size:17px;text-align:center;padding:15px 30px 0 30px;}
+    .swal2-timer-progress-bar-container > *{opacity:.5;background:#00B6FF;margin:0 5px}
+    .swal2-modal{background:rgba(255,255,255,1);border: 1px solid #fff;border-radius:var(--bingkai);top:-70px;}
+
+    .fa-heart {opacity:.3;color:white;font-size: 27px;position: absolute;animation:  heartMove linear 1;top: -10vh;z-index: 0;}
+    @keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
+  </style>
+  <body>
+    <!-- Stickers for Popup -->
+    <div id="pesanstiker">
+      <img id="stiker1" src="./assets/gigitin.gif"/>
+      <img id="stiker2" src="./assets/cilukba.gif"/>
+      <img id="stiker3" src="./assets/g5.gif"/> 
+      <img id="stiker4" src="./assets/lompatin.gif"/>
+    </div>
+
+    <!-- Change Audio here -->
+    <audio id="linkmp3"></audio>
+   
+    <div id="bodyblur">
+      <!-- Wallpaper -->
+      <img src="./assets/wpjalanan.jpg" id="wallpaper" width="100%" height="100%"/>
+      <div id="beneranblur"></div>
+    </div>
+
+    <div id='Content'>
+      <div id="suratin" onClick="memulai();audio.play();">
+        <!-- Envelope Button -->
+        <img src="./assets/envelope.png"/>
+      </div>
+      <p id="ket">Click the envelope!</p>
+    
+      <div>
+        <!-- Final Photo -->
+        <img src="./assets/tos.gif" id="fotoakhir"/>
+      </div>
+      <div>
+        <blockquote id='bq'>
+          <p id="kalimat"></p>
+          <p id="kalimatb"></p>
+          <p id="kalimatc"></p>
+        </blockquote>
+      </div>
+    
+      <!-- Buttons -->
+      <div id="Tombol">
+        <a id="By" onClick="multifungsi()">
+          <b id="tmbl">Yes</b>
+        </a>
+        <b id='buttonv2'></b>
+        <a id="Bn" onClick="tolak()">No</a>
+      </div>
+      
+    </div>
+
+  <!-- Do Not Edit This Section -->
+  <script>
+    function tunjukkan(){document.getElementById("sticky-ad").style = "bottom: 0px";}
+    function hilangkan() {document.getElementById("sticky-ad").style = "bottom: -130px";}
+    function showDiv() {Content.style = "opacity:1;margin-top:15vh;";ket.style="margin-top:30px";}
+    function memulai(){suratin.style="transition:all 1s ease;transform:scale(.1);opacity:0";ket.style="transition:all 1s ease;transform:scale(.1);opacity:0";setTimeout(pesan,300)}
+    function kpemb() {bodyblur.style="opacity:.7;animation:none";beneranblur.style="-webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px)";wallpaper.style="transform: scale(1.8)";suratin.style="display:none";ket.style="display:none";fotoakhir.style="display:inline-flex;";setTimeout(ftmuncul,100);Content.style = "opacity:1;margin-top:2vh;";bq.style = "opacity:1;visibility:visible;margin-top:5px";setTimeout(ngetik,500)}
+    function ftmuncul(){fotoakhir.style.transform="scale(1)";fotoakhir.style.opacity="1";}
+    function tombol(){Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";Bn.style="margin:12px 0 12px 12px";ftom=1;} ftom=0; function fakhiran(){document.getElementById("akhiran").style = "display:inline-flex";}
+    const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageWidth: 100, imageHeight: 100,}); audio = new Audio('' + linkmp3.innerHTML);const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getUTCFullYear();const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];today = dd + ' ' + monthNames[today.getUTCMonth()] + ' ' + yyyy;
+    function multifunction(){} // placeholder
+    function multifungsi(){if(ftom==1){jawab();} if(ftom==5){menuju();}}
+    function otomatis() {befanimkata();setTimeout(animkata,300);} function befanimkata(){kalimatc.style="transform:scale(.3);";} function animkata() {kalimatc.style="transform:scale(1);";}
+    function otomatis2() {befanimkata2();setTimeout(animkata2,700);} function befanimkata2(){kalimat.style.opacity="0";kalimatb.style.opacity="0";} function animkata2() {kalimat.innerHTML = pesanakhir1;kalimatb.innerHTML = pesanakhir2;kalimat.style.opacity="1";kalimatb.style.margin="30px";kalimatb.style.opacity="1";}
+
+    function kemunculan(){otomatis();kalimatc.innerHTML = ktbwh2;setTimeout(kemunculan2,2200);} function kemunculan2(){otomatis();kalimatc.innerHTML = ktbwh3;setTimeout(kemunculan3,2200);} function kemunculan3(){otomatis();kalimatc.innerHTML = katangetik2;setTimeout(kemunculan,2200);}
+    var aa=0,katangetik;function ngetik() {if(aa<katangetik.length){kalimat.innerHTML += katangetik.charAt(aa);aa++;setTimeout(ngetik,80);} if(aa==katangetik.length){fungsi=1;setTimeout(tombol,300);}}
+    var ai=0,katangetik2;function ngetik2() {if(ai<katangetik2.length){kalimatc.innerHTML += katangetik2.charAt(ai);ai++;setTimeout(ngetik2,100);} if(ai==katangetik2.length){kalimatc.style.animation="rto 1s infinite alternate";setTimeout(stakhir,1000);}}
+    function sbakhir(){kalimatc.style = "opacity:1;transform: scale(1);margin-top:30px";Bn.style.display="none";} function stakhir(){tmbl.innerHTML="Send Message";tmbl.style="font-size:12px";Tombol.style="margin-top:10px;opacity:1;transform: scale(1)";ftom=5;fungsi=0;}
+    async function menuju(){await swals.fire('OK!', 'Send me a message on WhatsApp!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";} setTimeout(showDiv,100);
+    async function jawab(){setTimeout(tunjukkan,2222);setInterval(createHeart,200);bodyblur.style="opacity:.5;animation:none";beneranblur.style="-webkit-backdrop-filter:blur(2px); backdrop-filter:blur(2px)";wallpaper.style="transform: scale(1)";Tombol.style="opacity:0;transform: scale(.1);";setTimeout(sbakhir,3000);setTimeout(ngetik2,3100);otomatis2();}
+
+    flag=1;flagg=1;fungsi=0;
+    function tolak(){
+      if(fungsi==1){
+        if(flagg==1){Bn.style="margin-left:90px;transform: rotate(45deg)";buttonv2.style="opacity:1;";By.style="opacity:0";document.getElementById("buttonv2").innerHTML = tekstolak1;flagg=2}
+        else if(flagg==2){Bn.style="margin-left:111px;transform: rotate(135deg)";document.getElementById("buttonv2").innerHTML = tekstolak2;flagg=3}
+        else if(flagg==3){Bn.style="margin:12px 0 12px 12px;transform: rotate(0)";buttonv2.style="opacity:0;";By.style="opacity:1";flagg=1}
+      }
+    }
+    tekstolak1 = "Oh stop 😜";tekstolak2 = "You have to say yes 😏";
+  </script> <!-- End Here -->
+
+  <!-- Change the words below:
+  1) Upload photo to https://postimages.org
+     to get the link
+  2) Replace the song by uploading to replit.com
+     or you can also use mailboxdrive.com
+  3) Having trouble? DM on Instagram: @rayyarrr -->
+
+  <script type="text/javascript">
+    async function pesan(){
+      await swalst.fire({
+        title: 'Hey You! ❤️',
+        imageUrl: '' + stiker1.src,
+      });
+      await swalst.fire({
+        title: 'How are you? Hope you\'re always healthy 🥳',
+        imageUrl: '' + stiker2.src,
+      });
+      await swalst.fire({
+        title: 'Oh yeah, did you know? 🤭',
+        imageUrl: '' + stiker3.src,
+      });
+      await swalst.fire({
+        title: 'Actually, I\'ve liked you for a long time 👉🏻👈🏻',
+        imageUrl: '' + stiker4.src,
+      });
+
+      katangetik = "Would you like to be my Gurl? 🤭❤️";
+      pesanakhir1 = "Yayyyyyyyy! Thank you for agreeing to be my Gurl >.<";
+      pesanakhir2 = "Remember our anniversary date: 📅 " + today + "!";
+      katangetik2 = "I love youuuu ❤️";
+
+      pesanwhatsapp = "I want to be your Gurl!😚 ><";
+      kpemb();
+    }
+  </script>
+  <script>
+    const body = document.querySelector("body");
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "fas fa-heart";
+      heart.style.left = (Math.random() * 90) + "vw";
+      heart.style.animationDuration = (Math.random() * 3) + 2 + "s";
+      body.appendChild(heart);
+    }
+    setInterval(function() {
+      var heartArr = document.querySelectorAll(".fa-heart");
+      if (heartArr.length > 100) {heartArr[0].remove()}
+    }, 100);
+  </script>
+</body>
+</html>
